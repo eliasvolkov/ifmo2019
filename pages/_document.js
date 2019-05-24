@@ -5,6 +5,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <link rel="shortcut icon" href="/static/favicon.ico" />
           <meta name="descrirtion" content="Next-portfolio website" />
           <meta charset="utf-8" />
           <meta

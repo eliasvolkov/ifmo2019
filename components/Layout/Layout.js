@@ -1,5 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
+import Router from "next/router";
+import NProgress from "nprogress";
+
+Router.onRouteChangeStart = url => {
+  console.log(url);
+  NProgress.start();
+};
+
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 const Layout = ({ title, children }) => {
   const toggleCollapse = () => {
@@ -9,6 +20,13 @@ const Layout = ({ title, children }) => {
 
   return (
     <div>
+      <Head>
+        <title>Next-portfolio</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
+        />
+      </Head>
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand">IV</a>
