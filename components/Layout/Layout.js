@@ -22,14 +22,13 @@ const Layout = ({ title, children }) => {
     <div>
       <Head>
         <title>Next-portfolio</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-        />
+        <link rel="stylesheet" href="/static/css/nprogress.css" />
       </Head>
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand">IV</a>
+          <Link href="/">
+            <a className="navbar-brand">IV</a>
+          </Link>
           <button
             onClick={toggleCollapse}
             className="navbar-toggler"
