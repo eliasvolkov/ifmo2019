@@ -46,11 +46,31 @@ const Layout = ({ title, children }) => {
           </div>
         </nav>
       </header>
-      <h1>{title}</h1>
+      <div className="content">
+        <h1>{title}</h1>
 
-      {children}
+        {children}
 
-      <footer>&copy; {new Date().getFullYear()}</footer>
+        <footer>&copy; {new Date().getFullYear()}</footer>
+      </div>
+
+      <style jsx>{`
+        a {
+          cursor: pointer;
+        }
+        h1 {
+          text-align: center;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          height: 90vh;
+        }
+        footer {
+          margin-top: auto;
+          text-align: center;
+        }
+      `}</style>
     </div>
   );
 };
