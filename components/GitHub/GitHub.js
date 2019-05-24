@@ -15,7 +15,6 @@ export default class GitHub extends Component {
       .then(res => res.json())
       .then(data => {
         this.setState({ user: data });
-        console.log(data);
       });
   }
 
