@@ -40,8 +40,12 @@ class UI {
     this.cardsField.innerHTML = output;
   }
 
-  renderProducts(title) {
-    this.products.innerHTML += `<li>${title}</li>`;
+  renderProducts(object) {
+    let output = "";
+    for (let key in object) {
+      output += ` ${key} : ${object[key]} `;
+    }
+    this.products.innerHTML = output;
   }
 
   renderPrice(price) {
