@@ -16,7 +16,7 @@ class UI {
     let output = "";
     cards.forEach(card => {
       output += `
-              <div class="col-4">
+              <div class="col-4 mt-3">
             <div class="card " height: 100%;">
             <div className="img__wrapper">
             <img
