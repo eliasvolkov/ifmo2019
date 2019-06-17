@@ -1,6 +1,7 @@
 const cards = document.querySelector(".cards");
 
 document.addEventListener("DOMContentLoaded", function() {
+  // For the first section (basket)
   const ui = new UI();
   const data = new Data();
   let totalPrice = 0,
@@ -47,4 +48,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
     e.preventDefault();
   });
+
+  // For the second section (mixer)
+
+  const inputs = document.querySelectorAll('input[type="number"]');
+  const range = document.querySelectorAll('input[type="range"]');
+
+  document.querySelector(".mixer").addEventListener("input", function(e) {
+    {
+      e.target.classList.contains("inp") ? changeInputs() : changeRanges();
+    }
+  });
+
+  function changeRanges() {
+    let r = range[0].value;
+    inputs[1].value = r;
+    let g = range[1].value;
+    inputs[2].value = g;
+    let b = range[2].value;
+    inputs[3].value = b;
+
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  }
+  function changeInputs() {
+    let r = inputs[1].value;
+    range[0].value = r;
+    let g = inputs[2].value;
+    range[1].value = g;
+    let b = inputs[3].value;
+    range[2].value = b;
+
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  }
 });
