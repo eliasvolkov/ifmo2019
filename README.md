@@ -23,8 +23,8 @@ The link for this page is
 youtube
 ---
 This reposetory contains code of youtube-clone application that was made by React. Just React without any libraries.
-The link for the application is 
+The link for the application is https://youtube-cl.netlify.com/
 
 
 
-*Also there's the other version of youtube that's using React-router and Redux libraries. The link for it is*
+*Also there's the other version of youtube that's using React-router and Redux libraries. The link for it is https://affectionate-heyrovsky-e818f2.netlify.com/*
