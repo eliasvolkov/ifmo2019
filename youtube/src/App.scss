@@ -1,0 +1,31 @@
+@import "./servises/smart-grid.scss";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.debug {
+  @include debug(rgba(0, 0, 0, 0.2), 1px solid green);
+}
+.main {
+  min-height: 100vh;
+  background-color: #fafafa;
+
+  .container {
+    @include wrapper();
+
+    .row {
+      @include row-flex();
+      .video {
+        @include col();
+        @include size(15);
+      }
+      .list {
+        margin-left: 25px;
+
+        @include size(8);
+      }
+    }
+  }
+}

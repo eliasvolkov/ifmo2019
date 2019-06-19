@@ -1,0 +1,23 @@
+@import "../../servises/smart-grid.scss";
+
+.container {
+  @include wrapper();
+  padding-top: 25px;
+
+  h4 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    margin-left: 17%;
+  }
+}
+.row {
+  @include row-flex();
+  padding-left: 200px;
+  @include md-block {
+    padding-left: 10px;
+  }
+
+  @include xs-block {
+    justify-content: center;
+  }
+}
