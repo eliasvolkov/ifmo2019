@@ -9,7 +9,7 @@ master
 ---
 
 There's code of next.js application in the branch. It's an example for course project.
-The application is here ...
+The application is here https://out.ilyaj0b.now.sh
 
 ---
 basket
