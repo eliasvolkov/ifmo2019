@@ -23,7 +23,7 @@ The link for this page is
 youtube
 ---
 This reposetory contains code of youtube-clone application that was made by React. Just React without any libraries.
-The link for the application is https://youtube-cl.netlify.com/
+The link for the application is https://ecstatic-shannon-636dbe.netlify.com
 
 
 
